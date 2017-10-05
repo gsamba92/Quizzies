@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.Admin.LoginController">
+   <children>
+      <Button fx:id="login" layoutX="80.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginClick" text="Login" textFill="#ee4a4a" />
+      <Button fx:id="register" layoutX="183.0" layoutY="221.0" mnemonicParsing="false" onAction="#registerClick" opacity="0.85" text="New User? SignUp!" textFill="#ee4a4a" />
+      <Label layoutX="77.0" layoutY="142.0" text="UserName" textFill="#ed4c4c" />
+      <Label layoutX="78.0" layoutY="179.0" text="Password" textFill="#ee4a4a" />
+      <TextField fx:id="userName" layoutX="183.0" layoutY="138.0" />
+      <Label layoutX="133.0" layoutY="35.0" prefHeight="21.0" prefWidth="255.0" text="Welcome to Quizzies Test Application" textFill="#ee4a4a" wrapText="true">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="83.0" fitWidth="95.0" layoutX="26.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../application/logo.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="passWord" layoutX="183.0" layoutY="175.0" />
+   </children>
+</AnchorPane>
